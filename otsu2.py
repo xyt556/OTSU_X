@@ -44,6 +44,8 @@ plt.imshow(camera, cmap='gray', interpolation='nearest')
 plt.axis('off')
 plt.subplot(133)
 
+plt.figtext(.15,.8, str(val), fontsize=11, ha='left')
+
 plt.plot(bins_center, hist, lw=2)
 plt.axvline(val, color='k', ls='--')
 
